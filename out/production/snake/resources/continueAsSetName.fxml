@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="enterNamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.Controller">
+   <children>
+      <ImageView fitHeight="515.0" fitWidth="750.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/gradient-ellipse.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="enterNameLabel" alignment="CENTER" layoutY="82.0" prefHeight="69.0" prefWidth="750.0" text="Would you like to continue playing as the following name:" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button id="#playBtn" fx:id="yesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#switchToGameplayScene" prefHeight="54.0" prefWidth="350.0" style="-fx-background-color: #000000; -fx-font: #ffffff; -fx-border-radius: 50;" text="Yes" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button id="#leaderboradBtn" fx:id="switchToNameInputScene" alignment="CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="378.0" mnemonicParsing="false" onAction="#switchToNameScene" prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #000000; -fx-font: #ffffff; -fx-border-radius: 50;" text="No" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="continueAsNameLabel" alignment="CENTER" layoutY="189.0" prefHeight="69.0" prefWidth="750.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
